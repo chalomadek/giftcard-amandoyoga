@@ -7,81 +7,102 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="icon" href="faviconV2.png" type="image/png">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      background: linear-gradient(to bottom, #cfe6e5, #fff); /* Gradiente de fondo */
+      margin: 0;
+      padding: 2rem 1rem;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 2rem;
-      color: #fff;
-    }
-    h1 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
+      background: linear-gradient(to bottom right, #cfe6e5, #ffffff);
       color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      transition: background 0.5s ease;
     }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
     p {
       font-size: 1rem;
       margin-bottom: 2rem;
-      color: #222;
+      text-align: center;
+      max-width: 600px;
     }
+
     .link {
       display: block;
-      background-color: #ffffff;
+      background-color: #ffffffcc;
       color: #222;
       text-decoration: none;
       padding: 15px 20px;
       margin: 10px auto;
       width: 90%;
       max-width: 400px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s, transform 0.2s;
-      font-size: 0.9rem;
-      font-weight: 600;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+      font-weight: bold;
+      backdrop-filter: blur(5px);
     }
+
     .link:hover {
-      background-color: #fff;
-      color: #222;
-      transform: scale(1.1);
+      background-color: #e6fffa;
+      transform: scale(1.03);
+      color: #019b93;
     }
+
     .footer {
       margin-top: 3rem;
       font-size: 0.9rem;
-      color: #222;
+      color: #555;
+      text-align: center;
     }
+
     .social-icons {
-      margin-top: 1rem;
+      margin-top: 2rem;
       font-size: 1.5rem;
     }
+
     .social-icons a {
       color: #222;
-      margin: 0 10px;
-      transition: color 0.3s;
+      margin: 0 12px;
+      transition: color 0.3s, transform 0.2s;
     }
+
     .social-icons a:hover {
-      color: #3db2ac;
+      color: #019b93;
+      transform: scale(1.2);
     }
+
     .header-img {
-      width: 200px;
-      margin-bottom: 1.5rem; /* Aquí eliminamos border-radius */
+      width: 180px;
+      margin-bottom: 1.5rem;
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
       }
       .link {
-        width: 80%;
         font-size: 0.9rem;
       }
-      .social-icons a {
-        font-size: 1.2rem;
+      .social-icons {
+        font-size: 1.3rem;
       }
     }
   </style>
 </head>
 <body>
-  <img src="https://amandoyoga.cl/wp-content/uploads/2022/10/Logo.png" alt="Logo Amandoyoga" class="header-img"> <!-- Aquí va tu logo -->
+  <img src="https://amandoyoga.cl/wp-content/uploads/2022/10/Logo.png" alt="Logo Amandoyoga" class="header-img">
   <h1>Giftcards Amandoyoga</h1>
   <p>Aquí podrás encontrar los enlaces de las diferentes Giftcards que tenemos para ti.</p>
 
@@ -92,12 +113,10 @@
   <a class="link" href="https://www.flow.cl/btn.php?token=u2tww0q" target="_blank">Giftcard Amandoyoga - Masaje de relajación</a>
   <a class="link" href="https://maps.app.goo.gl/ChqLwoQcZhM1LkVMA" target="_blank">Cómo llegar a nuestro centro</a>
 
-  <!-- Redes sociales con íconos -->
   <div class="social-icons">
     <a href="https://amandoyoga.cl" target="_blank"><i class="fas fa-link"></i></a>
     <a href="https://www.facebook.com/amandoyoga" target="_blank"><i class="fab fa-facebook"></i></a>
     <a href="https://www.instagram.com/amandoyoga" target="_blank"><i class="fab fa-instagram"></i></a>
-    <!-- Ícono de correo -->
     <a href="mailto:loreto@amandoyoga.cl" target="_blank"><i class="fas fa-envelope"></i></a>
   </div>
 
